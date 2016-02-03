@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MonkeyTweet.StylePage"
+	Style="{DynamicResource backgroundStyle}"
+	Title="Theme">
+		<ContentPage.ToolbarItems>
+  		<ToolbarItem x:Name="doneButton" Name="Done" Clicked="OnDoneButtonClicked" />
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout Spacing="20">
+			<Label Style="{DynamicResource labelStyle}" Text = "Background Color:" />
+			<Entry x:Name="backgroundColorEntry" />
+			<Label Style="{DynamicResource labelStyle}" Text = "Text Color:" />
+			<Entry x:Name="textColorEntry" />
+			<Button TextColor="{DynamicResource textColor}" Text="Apply Theme!" Clicked="OnApplyThemeClicked" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
